@@ -1,0 +1,7 @@
+After copied from ReadData file 
+ 
+ReadFile Data
+---------------
+
+My name is sumit 
+This is my first file 
