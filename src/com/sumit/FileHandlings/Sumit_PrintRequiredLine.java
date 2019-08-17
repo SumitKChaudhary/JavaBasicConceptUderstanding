@@ -18,7 +18,7 @@ public class Sumit_PrintRequiredLine
 {
 	public void readData (int line) throws IOException
 	{
-			File filePath = new File("../sumit.javaproject/ReadData.txt");
+			File filePath = new File("../JavaBasicConceptUderstanding/FileHandlingData/ReadData.txt");
 			
 			if (filePath.exists())
 			{
