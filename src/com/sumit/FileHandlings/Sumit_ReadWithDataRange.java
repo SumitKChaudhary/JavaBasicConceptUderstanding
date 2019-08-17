@@ -28,7 +28,7 @@ public class Sumit_ReadWithDataRange
 		int x=sc.nextInt();
 		int y=sc.nextInt();
 		
-		File fPath = new File("../sumit.javaproject/RangeDataFile.txt");
+		File fPath = new File("../JavaBasicConceptUderstanding/FileHandlingData/RangeDataFile.txt");
 		
 		if (fPath.exists())
 		{

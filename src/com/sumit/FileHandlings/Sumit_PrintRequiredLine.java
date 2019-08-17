@@ -9,6 +9,9 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.LineNumberReader;
+import java.util.Scanner;
+
+import com.sumit.interviewPractice.Main;
 
 /**
  * @author sumitkumar
@@ -32,6 +35,7 @@ public class Sumit_PrintRequiredLine
 				while(readLines.getLineNumber()!=line)
 				{
 					str=readLines.readLine();
+					System.out.println(str);
 				}
 			}
 			else 
@@ -39,7 +43,16 @@ public class Sumit_PrintRequiredLine
 					System.out.println("File not exist");
 			}	
 		//return line;
+	}
+	public static void main(String[] args) throws IOException {
+		 
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the line number which you want to read from file");
+		int n = sc.nextInt();
 		
+		Sumit_PrintRequiredLine refObj = new Sumit_PrintRequiredLine();
+		
+		refObj.readData(n);
 	}
 
 }
