@@ -43,7 +43,7 @@ public class ReadSpecificLine
 		return specific_lineData; 
 		
 	}
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException  	 {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number");

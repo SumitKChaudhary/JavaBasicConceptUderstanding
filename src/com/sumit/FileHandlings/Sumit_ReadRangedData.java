@@ -35,7 +35,7 @@ public class Sumit_ReadRangedData
 	 {
 		 	
 		 	
-		 	readData("../sumit.javaproject/NewFile.txt", 1, 3);
+		 	readData("../JavaBasicConceptUderstanding/FileHandlingData/NewFile.txt", 2, 3);
 	}
 
 }
