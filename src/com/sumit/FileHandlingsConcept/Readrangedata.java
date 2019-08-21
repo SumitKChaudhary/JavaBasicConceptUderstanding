@@ -17,7 +17,7 @@ public class Readrangedata
 {
 	public static String rangeDataRead(int startNum, int endNum) throws IOException {
 		
-		File connectFile = new File("../JavaBasicConceptUderstanding/RepeatFileHandling/File1_Copyfrom.txt");
+		File connectFile = new File("../BasicCoceptUnderstading/RepeatFileHandling/File1_Copyfrom.txt");
 		
 		FileReader readFileData = new FileReader(connectFile);
 		BufferedReader readLines = new BufferedReader(readFileData);
