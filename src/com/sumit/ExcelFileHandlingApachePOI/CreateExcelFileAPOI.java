@@ -10,6 +10,7 @@ package com.sumit.ExcelFileHandlingApachePOI;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Scanner;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -30,7 +31,10 @@ public class CreateExcelFileAPOI {
 		
 		XSSFSheet createSheet = createExcel.createSheet("WriteSheet");
 		
-		int a=0;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the Data which you want to save in Excel file. ");
+		String enteredData; 
 		
 		for (int i=0; i<3; i++)
 		{
@@ -40,14 +44,16 @@ public class CreateExcelFileAPOI {
 			{
 				XSSFCell createCell = createRow.createCell(j);
 				
-				a++;
-				createCell.setCellValue("Sumit"+a);
+				enteredData=sc.nextLine();
+				createCell.setCellValue(enteredData);
 			}
 		}
 		
 		createExcel.write(createExcelFile);
 		createExcelFile.flush();
 		createExcel.close();
+		
+		System.out.println("Thanks to you, Data is successfully saved in File"+createFile.getName());
 		
 		
 	
