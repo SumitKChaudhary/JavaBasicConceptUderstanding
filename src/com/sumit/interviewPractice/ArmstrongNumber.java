@@ -15,11 +15,11 @@ public class ArmstrongNumber
 	{
 		int number, orignalNum, reminder, result=0 ;
 		
-		
+		System.out.println("Enter The number to check its Armstrong or not");
 		Scanner sc = new Scanner(System.in);
 		
 		number=sc.nextInt();
-		
+		 
 		orignalNum=number;
 		
 		while(orignalNum!=0)

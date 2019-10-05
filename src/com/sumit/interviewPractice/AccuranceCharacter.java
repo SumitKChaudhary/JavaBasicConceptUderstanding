@@ -14,10 +14,9 @@ public class AccuranceCharacter
 {
 	public static void main(String[] args) {
 		
-		char[] chr= {'a','b','a','b','a','c','a'};
+		char[] chr= {'a','b','a','b','a','c','a', 'd'};
 		
 		Map<Character, Integer> map = new HashMap();
-		
 		for (char c: chr)
 		{
 			if(map.containsKey(c))
@@ -25,12 +24,14 @@ public class AccuranceCharacter
 				int counter =map.get(c);
 				
 				map.put(c, ++counter);
+				
 			}
 			else
 			{
 				map.put(c, 1);
 			}
 		}
+		
 		
 		System.out.println("Duplicate Character");
 		
@@ -42,8 +43,6 @@ public class AccuranceCharacter
 			}
 			
 		}
-		
-		
 	}
 
 }
