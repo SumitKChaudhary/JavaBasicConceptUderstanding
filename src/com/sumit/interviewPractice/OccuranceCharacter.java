@@ -1,7 +1,7 @@
 /**
  * @author 			:	 sumitkumar
  *	DATE       		:	 09-Aug-2019
- *  FILE NAME  		: 	 AccuranceCharacter.java
+ *  FILE NAME  		: 	 OccuranceCharacter.java
  *  PROJECT NAME 	:	 BasicCoceptUnderstading
  * 
  */
@@ -10,7 +10,7 @@ package com.sumit.interviewPractice;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AccuranceCharacter 
+public class OccuranceCharacter 
 {
 	public static void main(String[] args) {
 		
