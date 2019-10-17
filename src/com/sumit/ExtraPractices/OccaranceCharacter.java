@@ -6,26 +6,35 @@
  * 
  */
 package com.sumit.ExtraPractices;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+
 public class OccaranceCharacter 
 {
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
+		 String str = "Aeeeees";
+		 
+		 Map<Character, Integer> map = new HashMap<>();
+		char[] characterOfString=str.toCharArray();
 		
-		String s= "Sumiiiit";
-		
-		char c = 0;
-		int i=0,j=0;
-		for( i=0;i<s.length(); i++)
+		for(char ch: characterOfString)
 		{
-			c=s.charAt(i);
-			if(s.charAt(i)==c)
+			if(!map.containsKey(ch))
 			{
-				j++;
+				map.put(ch, 1);
+			}
+			else
+			{
+				int cht = map.get(ch);
+				map.put(ch, cht+1);
 			}
 		}
 		
-		
-		System.out.println(c);
-		
+		System.out.println(map);
 	}
 	
 

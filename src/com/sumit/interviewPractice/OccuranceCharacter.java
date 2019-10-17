@@ -13,8 +13,9 @@ import java.util.Map;
 public class OccuranceCharacter 
 {
 	public static void main(String[] args) {
+		String str = "Programming";
 		
-		char[] chr= {'a','b','a','b','a','c','a', 'd'};
+		char[] chr= str.toCharArray();
 		
 		Map<Character, Integer> map = new HashMap();
 		for (char c: chr)
