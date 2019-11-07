@@ -45,19 +45,17 @@ public class GetDifferencefromTwoString
 	      }
 	      return str2.substring(at);
 	  }
-	
-
 	public static void main(String[] args) 
 	{
 		String s= "Hi i'm sumit chaudhary";
-		String s1= "Hi i'm sumit kumar";
+		String s1= "Hi i'm sumit chaudahry";
 		
-		String s34= difference(s, s1);
+		String diffData= difference(s, s1);
+		System.out.println("First String Data is \t:\t"+s);
+		System.out.println("Second String Data is\t:\t"+s1);
 		
-		System.out.println(s34);
+		System.out.println("Difference from data is\t:\t"+diffData);
 		
 	}
-
-
 }
 
