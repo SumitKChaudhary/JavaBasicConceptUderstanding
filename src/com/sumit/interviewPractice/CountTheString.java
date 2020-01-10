@@ -16,8 +16,13 @@ public class CountTheString
 	{
 		String [] removedSpace= enterSentences.split(" ");
 
-		System.out.println(removedSpace.length);
 		return removedSpace.length;
+	}
+
+	public static int characterCount(String enterSentences)
+	{
+		char[] characters = enterSentences.toCharArray();
+		return  characters.length;
 	}
 	public static void main(String[] args) 
 	{
@@ -27,7 +32,12 @@ public class CountTheString
 		System.out.println("Enter the sentence ");
 		String sentences=sc.nextLine();
 
-		CountTheString.stringWordCount(sentences);
+		int words= CountTheString.stringWordCount(sentences);
+
+		int characters=CountTheString.characterCount(sentences);
+
+		System.out.println(words+"  words  "+characters+"  characters");
+
 	}
 	
 
