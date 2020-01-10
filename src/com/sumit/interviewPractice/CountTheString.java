@@ -6,36 +6,28 @@
  * 
  */
 package com.sumit.interviewPractice;
-public class CountTheString 
+
+import java.util.Scanner;
+
+public class CountTheString
 {
-	
-	public static int wordCount(String str) 
+
+	public static int stringWordCount(String enterSentences)
 	{
-		int count = 0 ;
-		
-		char ch[]= new char[str.length()];
-		
-		for (int i=0;  i<=str.length(); i++)
-		{
-			ch[i]=str.charAt(i);
-			
-			if(((i>0)&&(ch[i]!=' ')&&(ch[i-1]==' '))||((ch[0]!=' ')&&(i==0))) {
-				count++;
-			}
-		}
-		
-		return count;
+		String [] removedSpace= enterSentences.split(" ");
+
+		System.out.println(removedSpace.length);
+		return removedSpace.length;
 	}
 	public static void main(String[] args) 
 	{
-		
-		String str = "India is my counry"; 
-		
-		System.out.println(wordCount(str)+"word");
-		
-		
-		 
-		 
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the sentence ");
+		String sentences=sc.nextLine();
+
+		CountTheString.stringWordCount(sentences);
 	}
 	
 
