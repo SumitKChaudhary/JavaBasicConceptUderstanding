@@ -8,20 +8,18 @@ package com.sumit.PracticeAssignments;
 public class Sumit_StringCharRevers 
 {
 	public static String checkString= "My name is sumit ";
-	public static String reverString="";
+	public static String reversString="";
 	
 	public static void main(String[] args)
 	{
-		//find the lenght of the checkString variable 
-		int length =checkString.length();
-		//reverse the checkString and strore in reverString variable 
+		//reverse the checkString and stored in reversString variable
 		
 		
-		for (int i = length - 1; i >= 0; i--)
-			reverString = reverString + checkString.charAt(i);
-		//print out the strored value
-		
-		System.out.println(reverString);
+		for (int i = checkString.length() - 1; i >= 0; i--) {
+			reversString = reversString + checkString.charAt(i);
+			//print out the stored value
+		}
+		System.out.println(reversString);
 			//Result should be String My name is Sumit-------------timuS is eman yM
 
 		
