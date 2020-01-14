@@ -24,28 +24,11 @@ public class StringRePlaceConcept
 	public static void main(String[] args) 
 	{
 	
-			String actualData = "Hi, I'm {{name}}, I'm {{designation}}";
+			String actualData = "Hi, I'm {{name}}";
 
+			String changeString = relaceString(actualData, "name", "Sumit Kumar");
+			System.out.println(changeString);
 
-
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the key");
-		String actualKey=null;
-
-		System.out.println("Enter the value");
-		String replaceValue=null;
-		String s=null;
-			for(int i=0; i<actualData.length(); i++) {
-
-				actualKey=sc.nextLine();
-				replaceValue=sc.nextLine();
-			s =relaceString(actualData, actualKey, replaceValue);
-
-			}
-
-			System.out.println(s);
-			
-	
 	}
 
 }
