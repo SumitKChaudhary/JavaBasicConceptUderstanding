@@ -7,11 +7,16 @@ package com.sumit.PracticeAssignments;
 
 public class Sumit_StringCharRevers 
 {
-	public static String checkString= "My name is sumit ";
-	public static String reversString="";
-	
+
+
 	public static void main(String[] args)
 	{
+		String checkString= "My name is sumit ";
+		String reversString="";
+
+		String reversString1="";
+		String[] words = checkString.split("");
+
 		//reverse the checkString and stored in reversString variable
 		
 		
@@ -20,6 +25,12 @@ public class Sumit_StringCharRevers
 			//print out the stored value
 		}
 		System.out.println(reversString);
+		for (int i=words.length-1; i>=0; i--)
+		{
+			reversString1 = reversString1+words.toString().charAt(i);
+		}
+
+		System.out.println(reversString1.toString());
 			//Result should be String My name is Sumit-------------timuS is eman yM
 
 		
