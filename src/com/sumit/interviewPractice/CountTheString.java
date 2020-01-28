@@ -19,10 +19,27 @@ public class CountTheString
 		return removedSpace.length;
 	}
 
-	public static int characterCount(String enterSentences)
+	public static String characterCount(String enterSentences)
 	{
-		char[] characters = enterSentences.toCharArray();
-		return  characters.length;
+		String character = " ";
+		//Create an char array of given String
+		char[] strCharacter = enterSentences.toCharArray();
+		for(int i =0; i<strCharacter.length;i++)
+		{
+			//Declare an String with empty initialization for storing character
+
+			//When the characters is not space
+			while (i<strCharacter.length && strCharacter[i]!=' ')
+			{
+				//concate with the declared String
+				character=character+strCharacter[i];
+				i++;
+			}
+
+
+		}
+
+		return  character;
 	}
 	public static void main(String[] args) 
 	{
@@ -34,7 +51,7 @@ public class CountTheString
 
 		int words= CountTheString.stringWordCount(sentences);
 
-		int characters=CountTheString.characterCount(sentences);
+		String characters=CountTheString.characterCount(sentences);
 
 		System.out.println(words+"  words  "+characters+"  characters");
 
